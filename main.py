@@ -2,9 +2,14 @@ import uvicorn
 import re
 from fastapi import FastAPI
 from pydantic import BaseModel, EmailStr, field_validator
-from datetime import date
+from datetime import date, datetime
 import json
+from enum import Enum
 
+class Reason(str, Enum):
+    network = "нет доступа к сети"
+    phone = "не работает телефон"
+    mail = "не приходят письма"
 
 class Student(BaseModel):
     surname: str
@@ -12,6 +17,8 @@ class Student(BaseModel):
     birthday_date: date
     phone: str
     email: EmailStr
+    reason: Reason
+    detected_time: datetime
 
     @field_validator("name")
     def validate_name(cls, value: str) -> str:
