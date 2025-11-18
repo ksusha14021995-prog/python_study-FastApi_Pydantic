@@ -1,1 +1,1 @@
-{"surname": "Иванова", "name": "Ксения", "birthday_date": "1995-05-10", "phone": "+79001234567", "email": "test@example.com", "reason": "нет доступа к сети", "date": "2025-11-18T02:51:00"}
+{"surname": "Иванова", "name": "Иванова", "birthday_date": "1995-02-14", "phone": "79001234567", "email": "user@example.com", "reason": ["нет доступа к сети", "не приходят письма"], "detected_time": "2025-11-17T23:59:48.442000Z"}

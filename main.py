@@ -17,7 +17,7 @@ class Student(BaseModel):
     birthday_date: date
     phone: str
     email: EmailStr
-    reason: Reason
+    reason: list[Reason]
     detected_time: datetime
 
     @field_validator("name")
