@@ -10,6 +10,7 @@ class Reason(str, Enum):
     network = "нет доступа к сети"
     phone = "не работает телефон"
     mail = "не приходят письма"
+    mail1 = "не приходят письма1"
 
 class Student(BaseModel):
     surname: str
